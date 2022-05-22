@@ -1556,6 +1556,10 @@ body.is-preload #header .content .inner {
   opacity: 0;
 }
 
+#outerlimitslogo {
+  width: 100%;
+}
+
 @media screen and (max-width: 980px) {
   #header .content p br {
     display: none;
@@ -1809,5 +1813,5 @@ body.is-preload #footer {
 }
 
 #outerlimitslogo {
-  width: 30rem;
+  width: 70%;
 }
