@@ -106,15 +106,15 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-          <form method="post" action="#">
+          <form>
             <div class="fields">
               <div class="field half">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" required />
               </div>
               <div class="field half">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
               </div>
               <div class="field">
                 <label for="message">Message</label>
@@ -123,7 +123,8 @@
             </div>
             <ul class="actions">
               <li>
-                <input type="submit" value="Send Message" class="primary" />
+                <input type="hidden" name="_template" value="table">
+                <button type="submit" value="Send Message" class="primary emailSubmit">Send  Message</button>
               </li>
               <li><input type="reset" value="Reset" /></li>
             </ul>

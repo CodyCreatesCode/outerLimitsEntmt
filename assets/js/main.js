@@ -399,3 +399,27 @@
 					});
 
 })(jQuery);
+
+document.querySelector('.emailSubmit').addEventListener('click', (e) => {
+	e.preventDefault()
+	fetch("https://formsubmit.co/ajax/cody.alejo1997@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: `${document.querySelector("#name").value}`,
+		email: `${document.querySelector("#email").value}`,
+        message: `${document.querySelector("#message").value}`
+    })
+})
+    .then(response => response.json())
+    .then(data => {
+		document.querySelector("#name").value = '';
+		document.querySelector("#email").value = '';
+		document.querySelector("#message").value = '';
+		alert('Thank you, your form has been submitted!')
+	})
+    .catch(error => console.log(error));
+}) 
