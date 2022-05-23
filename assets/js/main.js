@@ -402,7 +402,7 @@
 
 document.querySelector('.emailSubmit').addEventListener('click', (e) => {
 	e.preventDefault()
-	fetch("https://formsubmit.co/ajax/outerlimitsentmt.com", {
+	fetch("https://formsubmit.co/ajax/outerlimitsentmt@gmail.com", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
